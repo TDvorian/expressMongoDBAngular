@@ -105,7 +105,7 @@ exports.put = function(req, res) {
 
 exports.del = function(req, res) {
     if (req.params.id) {
-        Person.remove({
+    	Customer.remove({
             _id: req.params.id
         }, function(err) {
             if (!err) {
