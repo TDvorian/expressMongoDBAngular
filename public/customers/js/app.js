@@ -3,7 +3,7 @@ angular.module('personApp',['ui.router','ngResource','personApp.controllers','pe
 
 angular.module('personApp').config(function($stateProvider,$httpProvider){
     $stateProvider.state('persons',{
-        url:'/persons',
+        url:'/customers/#/persons',
         templateUrl:'customers/partials/persons.html',
         controller:'PersonListController'
     }).state('viewPerson',{
