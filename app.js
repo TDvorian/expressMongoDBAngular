@@ -39,7 +39,7 @@ app.get('/Customer', customer.get);
 app.get('/Customer/:id', customer.get);
 app.post('/Customer', customer.post);
 app.put('/Customer/:id', customer.put);
-app.del('/Customer', customer.del);
+app.del('/Customer/:id', customer.del);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
