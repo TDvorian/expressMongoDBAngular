@@ -5,7 +5,7 @@ angular.module('personApp.controllers',[]).controller('PersonListController',fun
     $scope.deleteMovie=function(person){
         if(popupService.showPopup('Really delete this?')){
         	person.$delete(function(){
-                $window.location.href='';
+                $window.location.href='/customers/';
             });
         }
     }
