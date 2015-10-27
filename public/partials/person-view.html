@@ -1,0 +1,21 @@
+<table class="table persontable">
+    <tr>
+        <td><h3>Details for {{person.name.first}} {{person.name.last}}</h3></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>First Name</td>
+        <td>{{person.name.first}}</td>
+    </tr>
+    <tr>
+        <td>Last Name</td>
+        <td>{{person.name.last}}</td>
+    </tr>
+    <tr>
+        <td>Birth Date</td>
+        <td>{{person.dateOfBirth}}</td>
+    </tr>
+</table>
+<div>
+    <a class="btn btn-primary" ui-sref="editPerson({id:person._id})">Edit</a>
+</div>

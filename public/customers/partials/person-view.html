@@ -1,0 +1,38 @@
+<table class="table persontable">
+    <tr>
+        <td><h3>Details for {{person.name.first}} {{person.name.last}}</h3></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>First Name</td>
+        <td>{{person.name.first}}</td>
+    </tr>
+    <tr>
+        <td>Last Name</td>
+        <td>{{person.name.last}}</td>
+    </tr>
+    
+    <tr>
+        <td>Birth Date</td>
+        <td>{{person.dateOfBirth}}</td>
+    </tr>
+    <tr>
+        <td>Company Name</td>
+        <td>{{person.companyName}}</td>
+    </tr>
+    <tr>
+        <td>Mobile Phone</td>
+        <td>{{person.phone.mobile}}</td>
+    </tr>
+    <tr>
+        <td>Phone</td>
+        <td>{{person.phone.work}}</td>
+    </tr>
+    <tr>
+        <td>Skype</td>
+        <td>{{person.skype}}</td>
+    </tr>
+</table>
+<div>
+    <a class="btn btn-primary" ui-sref="editPerson({id:person._id})">Edit</a>
+</div>
